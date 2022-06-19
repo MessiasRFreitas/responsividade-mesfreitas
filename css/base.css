@@ -1,0 +1,112 @@
+* {
+  box-sizing: border-box;
+  font-family: verdana, arial, sans, sans-serife;
+}
+.header{
+  display: flex;
+  flex-wrap: nowrap;
+}
+.header-item{
+  display: flex;
+  flex: 80vw;
+  height: 12vw;
+
+}
+.item1{
+    display: flex;
+    flex: 15%;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    text-align: center;
+    background: #ladd9c;
+}
+.item8{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 8;
+  text-align: center;
+  background: #f1f1f1;
+
+}
+.imageh {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.imageh > img{
+  width: 80%;
+  height: auto;
+}
+/*Configuração do texto outline do título do cabeçalho */
+divh {
+  padding-top: 4px;
+  font-size: 11vw;
+  font-family: calibri, verdana, Swis721 Hv BT, sans;
+  white-space: nowrap;
+  position: absolute;
+}
+.front{
+  color: white;
+}
+.outline{
+  -webkit-text-stroke: 4px black;
+  user-select: none;
+}
+
+
+/*Estiliza a barra de navegação*/
+.navbar{
+    margin-top: 2px;
+    display: flex;
+    background-color: #333;
+
+}
+/*Estiliza os links barra de navegação*/
+.navbar a{
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+}
+/*Altera a cor na passagem do mouse*/
+.navbar a:hover{
+  background: #ddd;
+  color: black;
+}
+/*Container de colunas*/
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+/*Cria duas colunas lado-a-lado.*/
+/*coluna da esquerda*/
+.side {
+  display: flex;
+  flex:30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+  flex-direction: column;
+}
+
+.localfoto{
+ // height: 50px;
+  width: 100%;
+  padding: 20px;
+  background-color: gray;
+  margin-top: 5px;
+}
+/* Main column */
+.main {
+  //display: flex;
+  flex: 70%;
+  background-color: pink;
+  padding: 20px;
+}
+.footer{
+  padding: 20%
+  text-align: center;
+  background: #ddd;
+}

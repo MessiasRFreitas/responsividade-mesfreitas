@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8";
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="/css/base.css">
+<style>
+
+
+/* ÁREA DE GRID-BOX PARA JAQUETAS */
+.grid-jaquetas{
+        display: grid;
+        grid-template-columns: auto auto auto; 
+        grid-gap: 5px;
+       // background-color: #2196F3;
+        padding: 5px;  
+}
+
+.grid-item {
+      border: 1px solid black;
+      padding: 20px;
+      text-align: center;
+      height: 300px;
+}
+  .grid-item > img{
+        width: auto;
+        height: 80%;
+
+  }
+.textoProd1, .textoProd1, .textoProd1{
+    line-height: 1.0;
+}
+.textoProd1{
+  font-size: 1.0em;
+}
+.textoProd2{
+  font-size: .8em;
+}
+.textoProd3{
+  font-size: 1.0em;
+  font-weight: 800;
+}
+
+/* Layout responsivo: quando a tela tem largura menor que 700px, faça que duas colunas posicione no topo em relação á outra ao invés de ao lado.  */
+@media screen and (max-width: 700px){
+    .row, .navbar{
+        flex-direction: column;
+      }
+
+    .imageh {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+      }
+      .imageh > img{
+        width: 50%;
+      }
+    .navbar{
+        display: flex;
+        background-color: #f5f;
+        margin-left: 20px;
+        margin-right: 20px;
+        font-size: 1em;
+        font-weight: 800;
+    }
+    .navbar a{
+      border: 1px solid #f1f1f1;
+      background-color: black;
+    }
+    .main {
+      flex: 70%;
+      background-color: #f1f1f1;
+      //padding: 20px;
+    }
+    .row{
+      margin-right: 20px;
+      margin-left: 20px;
+
+    }
+
+    .side{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+    .localfoto{
+      width: 50%;
+      padding: 20px;
+      background-color: lightgray;
+      margin-top: 5px;
+    }
+
+    .grid-jaquetas{
+        grid-template-columns: auto; 
+    }
+
+
+
+    }
+      .grid-item > img{
+          width: auto;
+          height: 80%;
+  }
+
+
+}
+</style>
+</head>
+<body>
+<div class= "header">
+  <div class="header-item">
+    <div class="item1">
+      <div class="imageh">
+        <img src="img/funec_logo.png" alt="Logomarca da Funec">
+      </div>
+    </div>
+    <div class="item8">
+      <!-- Texto do header -->
+      <divh class="outline">
+            MINHA LOJA
+      </divh>
+      <divh class="front">
+            MINHA LOJA
+      </divh>
+    </div>    
+
+  </div>
+</div>
+<!--Barra de navegação -->
+<div class = "navbar">
+  <a href="#">Link 1</a>
+  <a href="#">Link 2</a>
+  <a href="#">Link 3</a>
+  <a href="#">Link 4</a>
+</div>
+<div class="row">
+    <div class="side">
+        <h2>Sobre mim</h2>
+        <h3>Minhas fotos</h3>
+        <div class = "localfoto">Imagem</div>
+        <p> Um texto que acompanha a minha imagem"</p>
+        <div class = "localfoto">Imagem</div>
+        <p> Um texto que acompanha a minha imagem"</p>
+        <div class = "localfoto">Imagem</div>
+        <p> Um texto que acompanha a minha imagem"</p>
+
+    </div>
+    <div class="main">
+      <h2>Minha Loja de Jaquetas</h2>
+      <h5> Aqui você vai encontra boas sugestões de jaquetas para o verão de 2020  - Data: 07/12/2020</h5>
+
+      <div class = "grid-jaquetas">
+        <div class="grid-item"><img src="img/winJq1.jpg">
+          <div>
+            <div class="textoProd1">Jaqueta Especial</div>
+            <div class="textoProd2">Cabedal: Couro e Tecido</div>
+            <div class="textoProd3">R$100,00</div>
+          </div>
+        </div>
+        <div class="grid-item"><img src="img/winJq2.jpg">
+          <div>
+            <div class="textoProd1">Jaqueta Especial</div>
+            <div class="textoProd2">Cabedal: Couro e Tecido</div>
+            <div class="textoProd3">R$100,00</div>
+          </div>
+        </div>    
+        <div class="grid-item"><img src="img/winJq3.jpg">
+          <div>
+            <div class="textoProd1">Jaqueta Especial</div>
+            <div class="textoProd2">Cabedal: Couro e Tecido</div>
+            <div class="textoProd3">R$100,00</div>
+          </div>
+        </div>
+        <div class="grid-item"><img src="img/winJq4.jpg">
+          <div>
+            <div class="textoProd1">Jaqueta Especial</div>
+            <div class="textoProd2">Cabedal: Couro e Tecido</div>
+            <div class="textoProd3">R$100,00</div>
+          </div>
+        </div>
+        <div class="grid-item"><img src="img/winJq5.jpg">
+          <div>
+            <div class="textoProd1">Jaqueta Especial</div>
+            <div class="textoProd2">Cabedal: Couro e Tecido</div>
+            <div class="textoProd3">R$100,00</div>
+          </div>
+        </div>
+        <div class="grid-item"><img src="img/winJq6.jpg">
+          <div>
+            <div class="textoProd1">Jaqueta Especial</div>
+            <div class="textoProd2">Cabedal: Couro e Tecido</div>
+            <div class="textoProd3">R$100,00</div>
+          </div>
+        </div>
+
+      </div>
+
+      <!--div class = "localfoto">Imagem</div-->
+
+  </div>
+</div>
+<div class="footer">
+  <h2>Rodapé</h2>
+</div>
+
+</body>
+</html>
